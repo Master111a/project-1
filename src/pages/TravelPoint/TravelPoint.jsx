@@ -1,16 +1,14 @@
 import React from "react";
-import sixX from "../../assets/sixX.png";
+import TravelPointLeft from "./components/TravelPointLeft";
+import TravelPointRight from "./components/TravelPointRight";
 
 export default function TravelPoint() {
-    return (
-        <div className="flex flex-col">
-            <div className="w-full relative">
-                <img
-                    src={sixX}
-                    alt="icon"
-                    className="absolute right-0 bottom-0 translate-y-2/3 -translate-x-1/3"
-                />
-            </div>
-        </div>
-    );
+  return (
+    <div className="flex w-full gap-x-[42px]">
+      <div className="w-full relative">
+        <TravelPointLeft />
+      </div>
+      <TravelPointRight />
+    </div>
+  );
 }

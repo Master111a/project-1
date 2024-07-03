@@ -1,0 +1,7 @@
+.group:hover .group-hover-fill-white path {
+  fill: #ffffff;
+}
+
+.fill-pink path {
+  fill: #f85e9f;
+}
