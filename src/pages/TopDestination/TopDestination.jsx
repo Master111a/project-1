@@ -9,7 +9,7 @@ export default function TopDestination() {
                 <img
                     src={sixX}
                     alt="icon"
-                    className="absolute right-0 bottom-0 translate-y-2/3 -translate-x-1/3"
+                    className="absolute hidden lg:block right-0 bottom-0 translate-y-2/3 -translate-x-1/3"
                 />
             </div>
             <ListDestination />

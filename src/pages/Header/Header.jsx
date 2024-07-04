@@ -17,7 +17,9 @@ export default function Header() {
                         title={"Log In"}
                     />
                     <Button
-                        className={"text-white bg-buttonColor"}
+                        className={
+                            "text-white bg-buttonColor hover:bg-buttonColor/80"
+                        }
                         title={"Sign Up"}
                     />
                 </div>

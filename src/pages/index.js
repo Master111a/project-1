@@ -5,3 +5,5 @@ export { default as Service } from "./Service/Service";
 export { default as Sponsor } from "./Sponsor/Sponsor";
 export { default as TopDestination } from "./TopDestination/TopDestination";
 export { default as TravelPoint } from "./TravelPoint/TravelPoint";
+export { default as KeyFutures } from "./KeyFutures/KeyFutures";
+export { default as NewLetter } from "./NewLetter/NewLetter";

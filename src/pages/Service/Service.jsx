@@ -25,16 +25,16 @@ export default function Service() {
         },
     ];
     return (
-        <div className="flex lg:items-center lg:px-165 overflow-hidden">
-            <div className="font-bold text-left w-full max-w-444 grow flex-shrink-0">
-                <h2 className="text-strongTextColor text-xl lg:text-2xl uppercase leading-1.2">
+        <div className="flex flex-col gap-y-4 lg:gap-y-8 xl:flex-row xl:items-center xl:px-165 overflow-hidden">
+            <div className="font-bold text-center xl:text-left w-full xl:max-w-444 grow flex-shrink-0">
+                <h2 className="text-strongTextColor text-lg lg:text-xl xl:text-23 uppercase leading-1.2">
                     Services
                 </h2>
-                <h3 className="text-textDesc text-3xl lg:text-5xl leading-1.2">
+                <h3 className="text-textDesc text-2xl lg:text-3xl xl:text-5xl leading-1.2">
                     Our top value categories for you
                 </h3>
             </div>
-            <div className="flex grow-[2] gap-x-5">
+            <div className="flex flex-col lg:flex-row xl:grow-[2] gap-x-5">
                 {listService?.map((item, index) => (
                     <ServiceItem
                         item={item}
