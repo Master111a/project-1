@@ -2,8 +2,14 @@ import { ServiceItem } from "../../components";
 import destination_1 from "../../assets/destination_1.png";
 import booking_1 from "../../assets/booking_1.png";
 import cloudy1 from "../../assets/cloudy1.png";
-
 export default function Service() {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    };
     const listService = [
         {
             src: destination_1,
@@ -34,7 +40,7 @@ export default function Service() {
                     Our top value categories for you
                 </h3>
             </div>
-            <div className="flex flex-col md:flex-row xl:grow-1 gap-x-5">
+            <div className="flex flex-col md:flex-row xl:grow-1 gap-x-5 ">
                 {listService?.map((item, index) => (
                     <ServiceItem
                         item={item}
@@ -43,6 +49,15 @@ export default function Service() {
                     />
                 ))}
             </div>
+            {/* <div>
+            <Slider {...settings}>
+            <ServiceItem
+                        item={item}
+                        key={index}
+                        active={index === 1 ? true : false}
+                    />
+            </Slider>
+            </div> */}
         </div>
     );
 }

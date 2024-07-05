@@ -1,7 +1,18 @@
 .group:hover .group-hover-fill-white path {
-  fill: #ffffff;
+    fill: #ffffff;
 }
 
 .fill-pink path {
-  fill: #f85e9f;
+    fill: #f85e9f;
+}
+.swiper {
+    width: fit-content;
+    height: 100%;
+}
+.swiper-slide {
+    min-width: 340px;
+}
+.swiper-pagination {
+    position: relative;
+    margin-top: 12px;
 }

@@ -12,7 +12,9 @@ import {
 import Ellipse24 from "./assets/Ellipse_24.png";
 import Ellipse23 from "./assets/Ellipse_23.png";
 import Testimonials from "./pages/Testimonials/Testimonials";
-
+import "./App.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 function App() {
     return (
         <>
