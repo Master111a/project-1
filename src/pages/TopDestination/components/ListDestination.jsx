@@ -28,8 +28,8 @@ export default function ListDestination() {
         },
     ];
     return (
-        <div className="lg:px-165">
-            <div className="grid grid-cols-3 gap-x-8">
+        <div className="lg:px-8 xl:px-165">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8">
                 {listDestination?.map((item, index) => (
                     <DestinationItem key={index} item={item} />
                 ))}

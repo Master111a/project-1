@@ -12,7 +12,7 @@ export default function DestinationItem({ item }) {
             </div>
             <div className="flex flex-col p-8 gap-8 w-full">
                 <div className="flex flex-col gap-y-4 w-full">
-                    <div className="flex w-full text-23 font-bold leading-1.2">
+                    <div className="flex w-full text-xl lg:text-23 font-bold leading-1.2 gap-x-1">
                         <h4 className="text-textDesc max-w-4/5 text-wrap">
                             {item?.name}
                         </h4>
@@ -20,7 +20,7 @@ export default function DestinationItem({ item }) {
                             ${item?.price}
                         </div>
                     </div>
-                    <p className="text-textDesc/75 text-left text-lg leading-1.2">
+                    <p className="text-textDesc/75 text-left text-base lg:text-lg leading-1.2">
                         {item?.location}
                     </p>
                 </div>

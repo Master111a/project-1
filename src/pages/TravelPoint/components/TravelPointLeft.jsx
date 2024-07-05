@@ -6,16 +6,18 @@ import { Button } from "../../../components";
 export default function TravelPointLeft() {
     return (
         <div className="relative w-fit">
-            <img src={travelImg} alt="img" className="hidden lg:block" />
+            <img src={travelImg} alt="img" />
             <div className="flex absolute right-0 top-1/4 -translate-y-[60%]">
                 <Button className="bg-white animate-wiggle">
-                    <span className="flex items-center gap-x-4 text-23">
+                    <span className="flex items-center gap-x-4 xl:text-23">
                         <img
                             src={discount}
                             alt="icon"
                             className="fill-pink group-hover-fill-white"
                         />
-                        Discounted Price
+                        <span className="hidden xl:inline">
+                            Discounted Price
+                        </span>
                     </span>
                 </Button>
             </div>

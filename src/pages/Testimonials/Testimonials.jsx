@@ -50,11 +50,11 @@ export default function Testimonials() {
             <img
                 src={layer2}
                 alt="layer"
-                className="absolute top-1/2 right-0 left-0 -translate-y-1/2 z-0"
+                className="absolute top-[45%] sm:top-1/2 right-0 left-0 -translate-y-1/2 z-0"
             />
-            <div className="flex items-center w-full justify-between lg:px-40 mt-16 z-[1] relative">
+            <div className="flex items-center w-full justify-between lg:px-10 xl:px-40 mt-24 lg:mt-16 z-[1] relative">
                 <ButtonIcon
-                    className="group bg-white border border-textDesc/10 w-25 h-25 cursor-pointer hover:bg-buttonColor hover:border-buttonColor/50 flex-shrink-0"
+                    className="group bg-white border border-textDesc/10 w-10 h-10 lg:w-16 lg:h-16 xl:w-25 xl:h-25 cursor-pointer hover:bg-buttonColor hover:border-buttonColor/50 flex-shrink-0 hover:drop-shadow-xl"
                     onClick={onBack}>
                     <img
                         src={arrowLeft1}
@@ -62,12 +62,12 @@ export default function Testimonials() {
                         className="filter transition duration-150 group-hover:filter-invert"
                     />
                 </ButtonIcon>
-                <div className="flex flex-col gap-y-16">
-                    <div className="flex flex-col font-bold gap-y-4 text-center w-full">
-                        <h2 className="text-strongTextColor text-xl lg:text-2xl uppercase leading-1.2">
+                <div className="flex flex-col gap-y-8 lg:gap-y-16">
+                    <div className="flex flex-col font-bold gap-y-2 lg:gap-y-4 text-center xl:text-left">
+                        <h2 className="text-strongTextColor text-lg lg:text-xl xl:text-23 uppercase leading-1.2">
                             Testimonials
                         </h2>
-                        <h3 className="text-textDesc text-3xl lg:text-44 leading-1.2">
+                        <h3 className="text-textDesc text-2xl lg:text-3xl xl:text-44 leading-1.2">
                             Trust our clients
                         </h3>
                     </div>
@@ -78,7 +78,7 @@ export default function Testimonials() {
                             length: Math.floor(listTestimonial?.length) || 3,
                         }).map((_, index) => (
                             <div
-                                className={`w-6 h-6 rounded-full cursor-pointer hover:bg-strongTextColor ${
+                                className={`w-4 h-4 lg:w-6 lg:h-6 rounded-full cursor-pointer hover:bg-strongTextColor ${
                                     index === active
                                         ? "bg-strongTextColor"
                                         : "bg-textDesc/5"
@@ -89,7 +89,7 @@ export default function Testimonials() {
                     </div>
                 </div>
                 <ButtonIcon
-                    className="group bg-white border border-textDesc/10 w-25 h-25 cursor-pointer hover:bg-buttonColor hover:border-buttonColor/50 flex-shrink-0"
+                    className="group bg-white border border-textDesc/10 w-10 h-10 lg:w-16 lg:h-16 xl:w-25 xl:h-25 cursor-pointer hover:bg-buttonColor hover:border-buttonColor/50 flex-shrink-0 hove:drop-shadow-xl"
                     onClick={onNext}>
                     <img
                         src={arrowRight}

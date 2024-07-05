@@ -22,9 +22,9 @@ export default function HeroRight() {
                     <div className="flex flex-col gap-y-8 w-full items-center">
                         <ImageCard
                             src={hero1}
-                            className="relative h-172 w-3/5 lg:w-40 xl:h-300 xl:w-272"
+                            className="relative h-172 w-3/5 lg:w-44 md:h-60 lg:h-172 xl:h-300 xl:w-272"
                             rounded="rounded-32">
-                            <ButtonIcon className=" animate-bounce xl:animate-none h-10 w-10 xl:h-16 xl:w-16 bg-strongTextColor absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2 cursor-pointer">
+                            <ButtonIcon className=" animate-bounce xl:animate-none h-10 w-10 xl:h-16 xl:w-16 bg-strongTextColor absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2 cursor-pointer drop-shadow-xl">
                                 <img
                                     src={send}
                                     alt="icon"
@@ -34,28 +34,28 @@ export default function HeroRight() {
                         </ImageCard>
                         <ImageCard
                             src={hero2}
-                            className="relative h-172 w-3/5 lg:w-40 xl:h-300 xl:w-272"
+                            className="relative h-172 w-3/5 lg:w-44 md:h-60 lg:h-172 xl:h-300 xl:w-272"
                             rounded="rounded-32"
                         />
                     </div>
                     <div className="flex lg:flex-col justify-center relative">
                         <ImageCard
                             src={hero3}
-                            className="relative h-172 w-3/5 lg:w-40 xl:h-400 xl:w-272"
+                            className="relative h-172 w-3/5 lg:w-44 md:h-60 xl:h-400 xl:w-272"
                             rounded="rounded-32">
                             <Button className="absolute bottom-[10%] right-0 translate-x-[60%] bg-white border-white hidden xl:block">
                                 <span className="flex items-center gap-x-2">
                                     <img src={location} alt="" /> Top Places
                                 </span>
                             </Button>
-                            <ButtonIcon className="animate-bounce h-10 w-10 bg-white absolute top-0 right-0 -translate-x-1/2 -translate-y-1/2 cursor-pointer xl:hidden">
+                            <ButtonIcon className="animate-bounce h-10 w-10 bg-white absolute top-0 right-0 -translate-x-1/2 -translate-y-1/2 cursor-pointer xl:hidden drop-shadow-xl">
                                 <img
                                     src={location}
                                     alt="location"
                                     className="w-6 h-6 lg:w-auto lg:h-auto"
                                 />
                             </ButtonIcon>
-                            <ButtonIcon className="animate-bounce h-10 w-10 bg-stats absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2 lg:hidden cursor-pointer">
+                            <ButtonIcon className="animate-bounce h-10 w-10 bg-stats absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2 lg:hidden cursor-pointe drop-shadow-xlr">
                                 <img
                                     src={userAdd}
                                     alt="layer"
@@ -63,7 +63,7 @@ export default function HeroRight() {
                                 />
                             </ButtonIcon>
                         </ImageCard>
-                        <ButtonIcon className="animate-bounce lg:w-10 lg:h-10 xl:h-16 xl:w-16 bg-[#FF5722] absolute hidden lg:flex bottom-0 right-1/2 cursor-pointer">
+                        <ButtonIcon className="animate-bounce lg:w-10 lg:h-10 xl:h-16 xl:w-16 bg-[#FF5722] absolute hidden lg:flex bottom-0 right-1/2 cursor-pointer drop-shadow-xl">
                             <img
                                 src={userAdd}
                                 alt="layer"

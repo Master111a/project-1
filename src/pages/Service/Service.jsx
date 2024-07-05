@@ -34,7 +34,7 @@ export default function Service() {
                     Our top value categories for you
                 </h3>
             </div>
-            <div className="flex flex-col lg:flex-row xl:grow-[2] gap-x-5">
+            <div className="flex flex-col md:flex-row xl:grow-[2] gap-x-5">
                 {listService?.map((item, index) => (
                     <ServiceItem
                         item={item}

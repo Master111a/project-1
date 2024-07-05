@@ -2,12 +2,12 @@ import React from "react";
 import star2 from "../../../assets/star2.png";
 export default function TestimonialItem({ item }) {
     return (
-        <div className="flex flex-col w-full gap-y-16">
+        <div className="flex flex-col w-full gap-y-8 lg:gap-y-16">
             <div className="flex items-center justify-center">
                 <img
                     src={item?.avatar}
                     alt=""
-                    className="w-32 h-32 rounded-full border"
+                    className="w-16 h-16 lg:w-32 lg:h-32 rounded-full border"
                 />
             </div>
             <div className="flex flex-col gap-y-8 w-full">
