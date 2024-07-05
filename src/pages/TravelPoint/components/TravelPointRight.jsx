@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import StatsItem from "./StatsItem";
 import { ButtonIcon } from "../../../components";
 import ticketStar from "../../../assets/ticketStar.svg";
 import discount from "../../../assets/discount.svg";
-
+import ScrollTrigger from "react-scroll-trigger";
 const statsList = [
     {
         stats: "500+",
@@ -23,14 +23,16 @@ const statsList = [
     },
 ];
 export default function TravelPointRight() {
+    const [countOn, setCountOn] = useState(false);
+    const ref = useRef(null);
     return (
         <div className="flex flex-col w-full lg:max-w-444 gap-8 lg:gap-16 relative">
             <div className="flex flex-col text-center xl:text-left gap-y-4 lg:gap-y-8">
                 <div className="flex flex-col font-bold gap-y-2 lg:gap-y-4">
-                    <h2 className="text-strongTextColor text-lg lg:text-xl xl:text-23 uppercase leading-1.2">
+                    <h2 className="text-strongTextColor text-lg lg:text-xl xl:text-23 uppercase !leading-1.2">
                         Travel Point
                     </h2>
-                    <h3 className="text-textDesc text-2xl lg:text-3xl xl:text-44 leading-1.2">
+                    <h3 className="text-textDesc text-2xl lg:text-3xl xl:text-44 !leading-1.2">
                         We helping you find your dream location
                     </h3>
                 </div>
@@ -40,11 +42,17 @@ export default function TravelPointRight() {
                     from 45 BC.
                 </p>
             </div>
-            <div className="grid grid-cols-2 gap-8">
-                {statsList?.map((item, index) => (
-                    <StatsItem item={item} key={index} />
-                ))}
-            </div>
+            <ScrollTrigger
+                onEnter={() => setCountOn(true)}
+                onExit={() => setCountOn(false)}>
+                {countOn && (
+                    <div className="grid grid-cols-2 gap-8" ref={ref}>
+                        {statsList?.map((item, index) => (
+                            <StatsItem item={item} key={index} />
+                        ))}
+                    </div>
+                )}
+            </ScrollTrigger>
             <ButtonIcon className="h-10 w-10 lg:h-16 lg:w-16 animate-wiggle lg:animate-none bg-yellowButton absolute top-1/2 right-0 -translate-x-/3 lg:translate-x-2/3 -translate-y-1/2 cursor-pointer">
                 <img src={ticketStar} alt="icon" className="w-6 h-6 lg:w-12" />
             </ButtonIcon>

@@ -5,10 +5,10 @@ export default function HeadDestination() {
     return (
         <div className="flex flex-col lg:flex-row items-center justify-between gap-y-4 p-4 lg:p-8 xl:py-16 xl:px-165">
             <div className="font-bold text-center lg:text-left w-full">
-                <h2 className="text-strongTextColor text-lg lg:text-xl xl:text-23 uppercase leading-1.2">
+                <h2 className="text-strongTextColor text-lg lg:text-xl xl:text-23 uppercase !leading-1.2">
                     Top Destination
                 </h2>
-                <h3 className="text-textDesc text-2xl lg:text-3xl xl:text-5xl leading-1.2">
+                <h3 className="text-textDesc text-2xl lg:text-3xl xl:text-5xl !leading-1.2">
                     Explore top destination
                 </h3>
             </div>

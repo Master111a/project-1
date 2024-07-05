@@ -29,10 +29,10 @@ export default function KeyFuturesLeft() {
         <div className="flex flex-col w-full lg:gap-12 xl:gap-16">
             <div className="flex flex-col text-center xl:text-left gap-y-4 lg:gap-y-8">
                 <div className="flex flex-col font-bold gap-y-2 lg:gap-y-4">
-                    <h2 className="text-strongTextColor text-lg lg:text-xl xl:text-23 uppercase leading-1.2">
+                    <h2 className="text-strongTextColor text-lg lg:text-xl xl:text-23 uppercase !leading-1.2">
                         Key features
                     </h2>
-                    <h3 className="text-textDesc text-2xl lg:text-3xl xl:text-44 leading-1.2">
+                    <h3 className="text-textDesc text-2xl lg:text-3xl xl:text-44 !leading-1.2">
                         We offer best services
                     </h3>
                 </div>

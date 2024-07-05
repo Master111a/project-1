@@ -63,7 +63,7 @@ export default function Testimonials() {
                     />
                 </ButtonIcon>
                 <div className="flex flex-col gap-y-8 lg:gap-y-16">
-                    <div className="flex flex-col font-bold gap-y-2 lg:gap-y-4 text-center xl:text-left">
+                    <div className="flex flex-col font-bold gap-y-2 lg:gap-y-4 text-center">
                         <h2 className="text-strongTextColor text-lg lg:text-xl xl:text-23 uppercase leading-1.2">
                             Testimonials
                         </h2>

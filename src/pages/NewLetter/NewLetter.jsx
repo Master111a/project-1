@@ -9,10 +9,10 @@ export default function NewLetter() {
             <div className="w-full xl:px-165">
                 <div className="bg-yellowButton/[0.08] px-4 py-6 md:px-8 md:py-16 lg:px-16 lg:py-32 flex flex-col gap-y-6 md:gap-y-12 lg:gap-y-16 rounded-32 relative">
                     <div className="flex flex-col font-bold gap-y-4 lg:gap-y-8 text-center">
-                        <h2 className="text-strongTextColor text-lg lg:text-xl xl:text-23 uppercase leading-1.2">
+                        <h2 className="text-strongTextColor text-lg lg:text-xl xl:text-23 uppercase !leading-1.2">
                             subscribe to our newsletter
                         </h2>
-                        <h3 className="text-textDesc text-xl lg:text-3xl xl:text-44 leading-1.2">
+                        <h3 className="text-textDesc text-xl lg:text-3xl xl:text-44 !leading-1.2">
                             Prepare yourself & let’s explore the beauty of the
                             world
                         </h3>

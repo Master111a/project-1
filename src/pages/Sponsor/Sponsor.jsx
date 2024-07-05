@@ -4,7 +4,7 @@ import Expedia from "../../assets/Expedia.png";
 import booking from "../../assets/booking.png";
 import airbnb from "../../assets/airbnb.png";
 import orbitz from "../../assets/orbitz.png";
-
+import Marquee from "react-fast-marquee";
 import { ImageCard } from "../../components";
 const listSponsor = [
     {
@@ -35,10 +35,12 @@ export default function Sponsor() {
                 <img src={groupArrowTop} alt="" className="-mt-6" />
                 <img src={groupArrowTop} alt="" className="-mb-6" />
             </div>
-            <div className="flex items-center w-full 2xl:px-165 justify-center lg:justify-between lg:py-8 xl:py-16 flex-wrap lg:flex-nowrap gap-4">
-                {listSponsor?.map((item, index) => (
-                    <ImageCard src={item?.src} key={index} />
-                ))}
+            <div className="w-full 2xl:px-165 lg:py-8 xl:py-16">
+                <Marquee className="w-full flex items-center justify-center lg:justify-between gap-4">
+                    {listSponsor?.map((item, index) => (
+                        <ImageCard src={item?.src} key={index} />
+                    ))}
+                </Marquee>
             </div>
         </div>
     );

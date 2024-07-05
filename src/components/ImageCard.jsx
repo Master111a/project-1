@@ -6,7 +6,7 @@ export default function ImageCard({ src, className, children, rounded }) {
             <img
                 src={src}
                 alt="image"
-                className={`object-cover object-center w-full h-full ${rounded}`}
+                className={`object-cover object-center w-full h-full px-4 lg:px-8 ${rounded}`}
             />
             {children}
         </div>
