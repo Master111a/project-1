@@ -38,7 +38,11 @@ export default function Sponsor() {
             <div className="w-full 2xl:px-165 lg:py-8 xl:py-16">
                 <Marquee className="w-full flex items-center justify-center lg:justify-between gap-4">
                     {listSponsor?.map((item, index) => (
-                        <ImageCard src={item?.src} key={index} />
+                        <ImageCard
+                            src={item?.src}
+                            key={index}
+                            className="px-4 lg:px-8"
+                        />
                     ))}
                 </Marquee>
             </div>

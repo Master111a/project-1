@@ -31,7 +31,7 @@ export default function Service() {
         },
     ];
     return (
-        <div className="flex flex-col gap-y-4 lg:gap-y-8 xl:flex-row xl:items-center xl:px-165 overflow-hidden">
+        <div className="flex flex-col gap-y-4 lg:gap-y-8 xl:flex-row xl:items-center xl:pl-165 w-full overflow-hidden">
             <div className="font-bold text-center xl:text-left w-full xl:max-w-444 grow-0 flex-shrink-0">
                 <h2 className="text-strongTextColor text-lg lg:text-xl xl:text-23 uppercase !leading-1.2">
                     Services
@@ -40,7 +40,7 @@ export default function Service() {
                     Our top value categories for you
                 </h3>
             </div>
-            <div className="flex flex-col md:flex-row xl:grow-1 gap-x-5 ">
+            <div className="flex flex-col md:flex-row xl:flex-shink-0 gap-x-5 md:overflow-x-auto scrollbar-thin">
                 {listService?.map((item, index) => (
                     <ServiceItem
                         item={item}
@@ -49,15 +49,6 @@ export default function Service() {
                     />
                 ))}
             </div>
-            {/* <div>
-            <Slider {...settings}>
-            <ServiceItem
-                        item={item}
-                        key={index}
-                        active={index === 1 ? true : false}
-                    />
-            </Slider>
-            </div> */}
         </div>
     );
 }

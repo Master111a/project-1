@@ -133,5 +133,6 @@ export default {
             };
             addUtilities(newUtilities, ["responsive", "hover"]);
         },
+        require("tailwind-scrollbar"),
     ],
 };

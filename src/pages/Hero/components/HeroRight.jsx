@@ -15,7 +15,7 @@ export default function HeroRight() {
             <img
                 src={layer}
                 alt="layer"
-                className="z-0 w-full object-contain xl:absolute  top-0 right-0 left-0 "
+                className="z-0 w-full object-contain xl:absolute top-0 right-0 left-0 "
             />
             <div className="flex justify-center w-full lg:items-end z-[1] -translate-y-16 lg:-translate-y-1/3 xl:translate-y-0">
                 <div className="flex flex-col lg:flex-row gap-8 w-full lg:w-auto">
@@ -34,7 +34,7 @@ export default function HeroRight() {
                         </ImageCard>
                         <ImageCard
                             src={hero2}
-                            className="relative h-172 w-3/5 lg:w-44 md:h-60 lg:h-172 xl:h-300 xl:w-272"
+                            className="relative h-172 w-3/5 lg:w-44 md:h-60 lg:h-172 xl:h-300 xl:w-272 overflow-hidden"
                             rounded="rounded-32"
                         />
                     </div>
