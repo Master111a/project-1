@@ -25,7 +25,7 @@ function App() {
                     alt=""
                     className="absolute top-56 right-0"
                 />
-                <div className="w-full flex flex-col gap-y-8 lg:gap-y-16 relative px-2 md:px-6 lg:px-10 2xl:px-0 2xl:max-w-3xl pb-20 ">
+                <div className="w-full flex flex-col gap-y-8 md:gap-y-12 lg:gap-y-16 relative px-2 md:px-6 lg:px-10 2xl:px-0 2xl:max-w-3xl pb-20 overflow-x-hidden">
                     <Header />
                     <Hero />
                     <Sponsor />

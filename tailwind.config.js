@@ -6,7 +6,9 @@ export default {
             padding: {
                 165: "165px",
             },
-            boxShadow: {},
+            boxShadow: {
+                card: "0px 7px 29px 0px rgba(100, 100, 111, 0.2)",
+            },
             width: {
                 25: "6.25rem",
                 272: "272px",
@@ -16,6 +18,9 @@ export default {
                 "3/5": "60%",
                 "4/5": "80%",
                 278: "278px",
+                300: "300px",
+                320: "320px",
+                350: "350px",
                 364: "364px",
                 400: "400px",
                 430: "430px",
@@ -39,6 +44,7 @@ export default {
                 713: "713px",
             },
             borderRadius: {
+                24: "24px",
                 32: "32px",
             },
             fontSize: {
@@ -58,6 +64,7 @@ export default {
             blur: {
                 layer: "500px",
             },
+
             dropShadow: {
                 1: "0px 126px 35px 0 #000000",
                 2: "0px 81px 32px 0 #000000/[0.01]",

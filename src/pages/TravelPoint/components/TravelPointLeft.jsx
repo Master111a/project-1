@@ -7,15 +7,15 @@ export default function TravelPointLeft() {
     return (
         <div className="relative w-fit">
             <img src={travelImg} alt="img" />
-            <div className="flex absolute right-0 top-1/4 -translate-y-[60%]">
-                <Button className="bg-white animate-wiggle">
+            <div className="flex absolute right-0 top-1/4 -translate-y-[60%] animate-wiggle">
+                <Button className="bg-white px-2">
                     <span className="flex items-center gap-x-4 xl:text-23">
                         <img
                             src={discount}
                             alt="icon"
-                            className="fill-pink group-hover-fill-white"
+                            className="w-6 h-6 fill-pink group-hover-fill-white"
                         />
-                        <span className="hidden xl:inline">
+                        <span className="hidden lg:inline">
                             Discounted Price
                         </span>
                     </span>

@@ -1,4 +1,4 @@
-import { ButtonIcon } from "../../components";
+import { ButtonIcon, TextTitle } from "../../components";
 import TestimonialItem from "./components/TestimonialItem";
 import arrowLeft1 from "../../assets/arrow-left1.svg";
 import arrowRight from "../../assets/arrow-right.svg";
@@ -64,12 +64,10 @@ export default function Testimonials() {
                 </ButtonIcon>
                 <div className="flex flex-col gap-y-8 lg:gap-y-16">
                     <div className="flex flex-col font-bold gap-y-2 lg:gap-y-4 text-center">
-                        <h2 className="text-strongTextColor text-lg lg:text-xl xl:text-23 uppercase leading-1.2">
-                            Testimonials
-                        </h2>
-                        <h3 className="text-textDesc text-2xl lg:text-3xl xl:text-44 leading-1.2">
-                            Trust our clients
-                        </h3>
+                        <TextTitle
+                            title="Testimonials"
+                            subtitle="Trust our clients"
+                        />
                     </div>
 
                     <TestimonialItem item={listTestimonial[active]} />

@@ -1,9 +1,6 @@
-import React, { useRef, useState } from "react";
 import StatsItem from "./StatsItem";
-import { ButtonIcon } from "../../../components";
+import { ButtonIcon, TextTitle } from "../../../components";
 import ticketStar from "../../../assets/ticketStar.svg";
-import discount from "../../../assets/discount.svg";
-import ScrollTrigger from "react-scroll-trigger";
 const statsList = [
     {
         stats: "500+",
@@ -23,41 +20,30 @@ const statsList = [
     },
 ];
 export default function TravelPointRight() {
-    const [countOn, setCountOn] = useState(false);
-    const ref = useRef(null);
     return (
-        <div className="flex flex-col w-full lg:max-w-444 gap-8 lg:gap-16 relative">
+        <div className="flex flex-col w-full lg:max-w-444 gap-6 md:gap-8 lg:gap-12 xl:gap-16 relative">
             <div className="flex flex-col text-center xl:text-left gap-y-4 lg:gap-y-8">
                 <div className="flex flex-col font-bold gap-y-2 lg:gap-y-4">
-                    <h2 className="text-strongTextColor text-lg lg:text-xl xl:text-23 uppercase !leading-1.2">
-                        Travel Point
-                    </h2>
-                    <h3 className="text-textDesc text-2xl lg:text-3xl xl:text-44 !leading-1.2">
-                        We helping you find your dream location
-                    </h3>
+                    <TextTitle
+                        title="Travel Point"
+                        subtitle="We helping you find your dream location"
+                    />
                 </div>
-                <p className="text-base lg:text-lg leading-1.6">
+                <p className="sm:text-sm md:text-base lg:text-lg leading-1.6">
                     Contrary to popular belief, Lorem Ipsum is not simply random
                     text. It has roots in a piece of classical Latin literature
                     from 45 BC.
                 </p>
             </div>
-            <ScrollTrigger
-                onEnter={() => setCountOn(true)}
-                onExit={() => setCountOn(false)}>
-                {countOn && (
-                    <div className="grid grid-cols-2 gap-8" ref={ref}>
-                        {statsList?.map((item, index) => (
-                            <StatsItem item={item} key={index} />
-                        ))}
-                    </div>
-                )}
-            </ScrollTrigger>
-            <ButtonIcon className="h-10 w-10 lg:h-16 lg:w-16 animate-wiggle lg:animate-none bg-yellowButton absolute top-1/2 right-0 -translate-x-/3 lg:translate-x-2/3 -translate-y-1/2 cursor-pointer">
+
+            <div className="grid grid-cols-2 gap-6 md:gap-8">
+                {statsList?.map((item, index) => (
+                    <StatsItem item={item} key={index} />
+                ))}
+            </div>
+
+            <ButtonIcon className="h-10 w-10 lg:h-16 lg:w-16 animate-wiggle lg:animate-none bg-yellowButton absolute top-1/3 md:top-1/2 right-0 translate-x-1/3 xl:translate-x-2/3 md:-translate-y-2/3 xl:-translate-y-1/2 cursor-pointer">
                 <img src={ticketStar} alt="icon" className="w-6 h-6 lg:w-12" />
-            </ButtonIcon>
-            <ButtonIcon className="h-10 w-10 lg:h-16 lg:w-16 bg-white animate-wiggle lg:hidden flex absolute left-0 bottom-1/4">
-                <img src={discount} alt="icon" className="w-6 h-6 lg:w-12" />
             </ButtonIcon>
         </div>
     );
