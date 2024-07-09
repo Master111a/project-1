@@ -30,7 +30,7 @@ const listSponsor = [
 ];
 export default function Sponsor() {
     return (
-        <div className="-mt-6 sm:-mt-16 lg:-mt-20 xl:mt-0 w-full relative z-[1]">
+        <div className="-mt-4 sm:-mt-16 lg:-mt-20 xl:mt-0 w-full relative z-[1]">
             <div className="hidden lg:flex absolute left-0 xl:left-10 gap-x-6 bottom-3/4 xl:translate-y-1/2 w-fit">
                 <img src={groupArrowTop} alt="" className="-mt-6" />
                 <img src={groupArrowTop} alt="" className="-mb-6" />

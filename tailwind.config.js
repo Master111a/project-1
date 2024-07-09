@@ -7,7 +7,7 @@ export default {
                 165: "165px",
             },
             boxShadow: {
-                card: "0px 7px 29px 0px rgba(100, 100, 111, 0.2)",
+                card: "0px 4px 20px 0px rgba(100, 100, 111, 0.2)",
             },
             width: {
                 25: "6.25rem",
